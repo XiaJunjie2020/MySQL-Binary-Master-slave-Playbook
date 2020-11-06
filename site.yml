@@ -1,10 +1,10 @@
 ---
-- hosts: master
+- hosts: "{{master}}"
   roles:
     - role: master
 
 
-- hosts: slave 
+- hosts: "{{slave}}"
   remote_user: root 
   roles:
     - role: slave 
